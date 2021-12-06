@@ -1,0 +1,6 @@
+select * from TesCase order by credit_card desc;
+
+
+select credit_card_type, count(credit_card_type) from TesCase
+group by credit_card_type 
+order by count(credit_card_type) DESC;

@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int pal=0;
+    int tmp=0;
+    for (int i=0; i<=1666;i++){
+        pal=i;
+        if (pal%3==0){
+        tmp++;
+        pal=pal+tmp;}
+        else
+        printf("%d\n",pal);
+    }
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <stdio.h>
+void cek(int p){
+    int i, flag = 0;
+    for (i = 2; i <= p / 2; ++i) {
+    if (p % i == 0) {
+      flag = 1;
+      break;
+    }
+  }
+
+  if (p == 1) {
+    printf("1 Bukan prima atau bisa dibilang prima juga");
+  } 
+  else {
+    if (flag == 0)
+      printf("%d Bilangan prima", p);
+    else
+      printf("%d Bukan bilangan prima.", p);
+  }
+}
+
+int main() {
+  int p=0;
+  printf("Masukan angka: ");
+  scanf("%d", &p);
+  cek(p);
+  return 0;
+}
